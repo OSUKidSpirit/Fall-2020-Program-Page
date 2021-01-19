@@ -10,7 +10,7 @@
 
   .anthonian-5-grid-container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     text-align: center;
     vertical-align: top;
   }
@@ -39,7 +39,19 @@
     }
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 550px) {
+    .anthonian-4-grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    .anthonian-5-grid-container {
+      display: grid;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      vertical-align: top;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
     .anthonian-4-grid-container {
       display: grid;
       grid-template-columns: auto auto auto auto;
